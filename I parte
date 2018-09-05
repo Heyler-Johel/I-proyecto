@@ -1,0 +1,32 @@
+def menu (TipoUs):
+    if TipoUs==0:
+        print ("Bienvenido estimado Cliente")
+        print ("1. Consultar Precio \n2. Consultar Descuento")
+        print ("3. Consultar Productos\n4. Comprar  (Carrito)")
+        print ("5. Facturación")
+        a=input("Seleccione lo deseado: ")
+    elif TipoUs==1:
+        print ("Bienvenido estimado Administrador")
+        print ("1. Insertar Producto\n2. Eliminar Producto Mantenimiento de la Base de Datos")
+        print ("3. Modificar Producto cada vez que se consulta algún dato se debe\n4. Consultar Precio consultar por código o cédula.")
+        print ("5. Consultar Descuentos\n6. Consultar Productos de un Super")
+        print ("7. Registrar Clientes\n8. Reportes")
+        a=input("Seleccione lo deseado: ")
+    elif TipoUs==2:
+        print ("Bienvenido estimado Vendedor")
+        print ("1. Consultar Precio\n2. Consultar Descuento de un cliente")
+        print ("3. Consultar Productos de un Super")
+        a=input("Seleccione lo deseado: ")
+    elif TipoUs==3:
+        print ("Bienvenido estimado Cliente-Funcionario")
+        print ("1. Consultar Precio\n2. Consultar Descuento")
+        print ("3. Consultar Productos\n4. Comprar (Carrito)")
+        print ("5. Facturación\n6. Descuento Extra 5%")
+        a=input("Seleccione lo deseado: ")
+        global a
+print ("Supermercados Unidos\nBienvenid@")
+Ced=input("Ingrese su Cédula: ")
+TipoUs=input("Seleccione el tipo de Usuario: ")
+TipoUs=int(TipoUs)
+menu(TipoUs)
+print a
